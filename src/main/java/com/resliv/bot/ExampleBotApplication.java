@@ -9,9 +9,9 @@ import org.telegram.telegrambots.ApiContextInitializer;
 @EnableScheduling
 public class ExampleBotApplication {
 
-	public static void main(String[] args) {
-		ApiContextInitializer.init();
-		SpringApplication.run(ExampleBotApplication.class, args);
-	}
+    public static void main(String[] args) {
+        ApiContextInitializer.init();
+        SpringApplication.run(ExampleBotApplication.class, args);
+    }
 
 }

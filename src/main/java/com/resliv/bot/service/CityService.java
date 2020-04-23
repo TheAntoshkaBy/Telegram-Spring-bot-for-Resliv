@@ -11,12 +11,12 @@ import java.util.List;
 public class CityService {
     private final CityRepository cityRepository;
 
-    public CityService(CityRepository cityRepository){
+    public CityService(CityRepository cityRepository) {
         this.cityRepository = cityRepository;
     }
 
     @Transactional(readOnly = true)
-    public List<City> findByName(String name){
+    public List<City> findByName(String name) {
         return cityRepository.findByName(name);
     }
 }
